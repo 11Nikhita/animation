@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background:linear-gradient(to right, white, pink);
+                
+            }
+            .box{
+                height: 100px;
+                width: 250px;
+                background-color: black;
+                margin: 25%;
+                align-items: center;
+                justify-content: center;               
+                animation:box1 5s, box2 5s, box3 5s;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: infinite;
+                transform-origin: bottom right;
+            }
+            @keyframes box3{ 
+                0%{border-radius: 0%;}
+                40%{border-radius:45px;}
+                75%{border-radius:100px;}
+                100%{border-radius: 150px;}
+
+            }
+            @keyframes box2{
+                0%{background-color: blue;}
+                45%{background-color:rgb(4, 129, 62);}
+                75%{background-color:rgb(162, 3, 3);}
+                100%{background-color:rgb(129, 9, 241);}
+            }
+            
+            @keyframes box1{
+                0%{transform:rotate(0deg);}  
+                45%{transform:rotate(0deg);}
+                75%{transform:rotate(90deg);}
+                100%{transform:rotate(0deg);}
+                                       
+            }
+            h1{
+                font-style: italic;
+                font-size: 50px;
+                text-align: center;
+                background: linear-gradient(to right,white, rgb(43, 60, 67));
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                text-shadow: 2px 2px 3px rgb(16, 12, 12);
+                
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="box"><h1>Nikhita</h1></div>
+        
+    </body>
+</html>
